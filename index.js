@@ -38,14 +38,15 @@ function distanceFromHqInBlocks(someValue) {
         return 2.56}*/
     
     switch(true){
-        case Dis > 2000:
-            return 25
-        case Dis< 400:
-            return 1
-        case Dis < 2000:
-            return 2.56
         case Dis > 2500:
             return 'cannot travel that far'
+        case Dis< 400: 
+            return 1
+        case Dis < 2000:
+             return 2.56
+        case Dis >= 2000:
+            return 25
+    
         
         
 
